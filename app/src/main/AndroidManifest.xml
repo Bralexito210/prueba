@@ -12,7 +12,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".cuenta">
+        <activity android:name=".inicio">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -34,6 +34,8 @@
             android:name=".acerca"
             android:label="@string/title_activity_acerca"
             android:theme="@style/AppTheme.NoActionBar"></activity>
+        <activity android:name=".funcion"/>
+
     </application>
 
 </manifest>

@@ -56,6 +56,8 @@ public class inicio extends AppCompatActivity {
             public void onClick(View view) {
                 tab= "usuario";
                 String[] cont= new String[1];
+                if(user.getText().equals("") || pass.getText().equals("")){
+
                 try {
                     //http://localhost/java/iinicio.php?n=david&p=david
                     String a = durl.downloadUrl("http://"+ip+"/java/iinicio.php?n="+user.getText().toString()+"&p="+pass.getText().toString());
@@ -73,6 +75,10 @@ public class inicio extends AppCompatActivity {
 
                 } catch (IOException e) {
                     e.printStackTrace();
+                }
+                }
+                else{
+                    Toast.makeText(getApplicationContext(), "por favor completar los campos", Toast.LENGTH_LONG).show();
                 }
                 //conectar();
             }
