@@ -22,6 +22,7 @@ public class funcion extends AppCompatActivity {
     boolean est1;
     String dato="";
     http durl =new http();
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
