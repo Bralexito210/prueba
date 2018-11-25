@@ -57,7 +57,7 @@ public class inicio extends AppCompatActivity {
                 tab= "usuario";
                 String[] cont= new String[1];
                 if(user.getText().toString().equals("") || pass.getText().toString().equals("")){
-                    Toast.makeText(getApplicationContext(), "el usuario", Toast.LENGTH_LONG).show();
+                    Toast.makeText(getApplicationContext(), "completar los campos", Toast.LENGTH_LONG).show();
                 }
                 else {
 
