@@ -16,7 +16,7 @@ import android.widget.ToggleButton;
 import java.io.IOException;
 
 public class funcion extends AppCompatActivity {
-    Button btn_Regresar;
+    Button btn_Regresar1;
     ToggleButton led1,led2;
     Button avanza,retrocede,izquierda,derecha;
     boolean est1;
@@ -27,7 +27,7 @@ public class funcion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.funcion);
-        btn_Regresar= (Button) findViewById(R.id.btn_Regresar);
+        btn_Regresar1= findViewById(R.id.btn_Regresar);
         avanza = findViewById(R.id.id_avanza);
         retrocede = findViewById(R.id.id_retrocede);
         izquierda = findViewById(R.id.id_izq);
@@ -37,12 +37,11 @@ public class funcion extends AppCompatActivity {
         led2 = findViewById(R.id.LED2);
 
 
-        btn_Regresar.setOnClickListener(new View.OnClickListener() {
+        btn_Regresar1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Intent intentReg = new Intent(funcion.this, menu.class);
                 funcion.this.startActivity(intentReg);
-
             }
         });
 
