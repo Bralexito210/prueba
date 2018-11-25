@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">franquito</string>
+    <string name="title_activity_funcion">funcion</string>
+    <string name="title_activity_vehiculo">vehiculo</string>
+    <string name="title_activity_instrucciones">instrucciones</string>
+    <string name="title_activity_acerca">acerca</string>
+</resources>

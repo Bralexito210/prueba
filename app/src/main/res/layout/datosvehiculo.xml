@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/holo_blue_dark"
+    tools:context=".MainActivity">
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:background="@android:color/white"
+        />dit
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:textSize="60px"
+        android:text="Datos del Vehiculo"
+        android:textColor="@android:color/white"
+        />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:background="@android:color/white"
+        />dit
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="Modelo:"
+        android:background="@android:color/white"
+        android:layout_gravity="center"
+        />dit
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:background="@android:color/white"
+        />dit
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="Marca:"
+        android:background="@android:color/white"
+        android:layout_gravity="center"
+        />dit
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:background="@android:color/white"
+        />dit
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="Placa:"
+        android:background="@android:color/white"
+        android:layout_gravity="center"
+        />dit
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:background="@android:color/white"
+        />dit
+    <EditText
+        android:layout_width="360dp"
+        android:layout_height="wrap_content"
+        android:hint="Color:"
+        android:background="@android:color/white"
+        android:layout_gravity="center"
+        />dit
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:background="@android:color/white"
+        />dit
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint=""
+        android:background="@android:color/white"
+        />dit
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:textSize="38px"
+        android:text="   Cambia foto del vehiculo:"
+        android:textColor="@android:color/white"
+        />
+
+    <ImageView android:id="@+id/Portada"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity ="center"
+
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="                         "
+            />
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text=" ENVIAR "
+            android:background="@android:color/holo_blue_bright"
+            android:textColor="@android:color/black"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="           "
+            />
+        <Button
+            android:id="@+id/botonregresar4"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+            android:text="CANCELAR"
+            android:background="@android:color/holo_red_light"
+            android:textColor="@android:color/black"
+            />
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent" android:layout_height="match_parent" android:orientation="vertical" android:background="@android:color/holo_blue_dark" tools:context=".instrucciones">
+    <TextView android:layout_width="wrap_content" android:layout_height="40dp" android:layout_gravity="center" android:textSize="55px" android:text="Funcionalidades del vehiculo" android:textColor="@android:color/white"/>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="" android:background="@android:color/white"/>
+    dit
+
+    <Button
+        android:id="@+id/id_avanza"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_blue_bright"
+        android:text="AVANZAR"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="@android:color/white"
+        android:hint="" />
+
+
+    <Button
+        android:id="@+id/id_retrocede"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_blue_bright"
+        android:text="RETROCEDER"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="@android:color/white"
+        android:hint="" />
+    dit
+
+    <Button
+        android:id="@+id/id_izq"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_blue_bright"
+        android:text="IZQUIERDA"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="@android:color/white"
+        android:hint="" />
+    dit
+
+    <Button
+        android:id="@+id/id_der"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_blue_bright"
+        android:text="DERECHA"
+        android:textColor="@android:color/black" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="@android:color/white"
+        android:hint="" />
+    <Button
+        android:id="@+id/id_stop"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_gravity="center"
+        android:background="@android:color/holo_blue_bright"
+        android:text="DERECHA"
+        android:textColor="@android:color/black" />
+
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="10dp"
+        android:background="@android:color/white"
+        android:hint="" />
+
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+
+        <TextView android:layout_width="100dp" android:layout_height="30dp" android:layout_gravity="left" android:text=" " android:textColor="@android:color/white" android:textSize="40px"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="30dp" android:layout_gravity="left" android:textSize="38px" android:text="DELANTERAS" android:textColor="@android:color/white"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="30dp" android:layout_gravity="left" android:text=" POSTERIORES" android:textColor="@android:color/white" android:textSize="38px"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="100dp" android:layout_height="30dp" android:layout_gravity="left" android:text=" Focos: " android:textColor="@android:color/white" android:textSize="40px"/>
+        <ToggleButton android:id="@+id/LED1" android:layout_width="108dp" android:layout_height="wrap_content" android:layout_weight="1" android:fontFamily="casual" android:lineSpacingExtra="8sp" android:text="ToggleButton" android:textAppearance="@style/TextAppearance.AppCompat.Button" android:textOff="ENCENDER" android:textOn="APAGAR" android:typeface="normal"/>
+        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint=" " android:background="@android:color/holo_blue_dark"/>
+        dit
+        <ToggleButton android:id="@+id/LED2" android:layout_width="108dp" android:layout_height="wrap_content" android:layout_weight="1" android:fontFamily="casual" android:lineSpacingExtra="8sp" android:text="ToggleButton" android:textAppearance="@style/TextAppearance.AppCompat.Button" android:textOff="ENCENDER" android:textOn="APAGAR" android:typeface="normal"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="100dp" android:layout_height="30dp" android:layout_gravity="left" android:text=" " android:textColor="@android:color/white" android:textSize="40px"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="30dp" android:layout_gravity="left" android:textSize="38px" android:text=" LLANTAS" android:textColor="@android:color/white"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="30dp" android:layout_gravity="left" android:text=" LLANTAS" android:textColor="@android:color/white" android:textSize="38px"/>
+    </LinearLayout>
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content">
+        <TextView android:layout_width="100dp" android:layout_height="30dp" android:layout_gravity="left" android:text=" Bloqueo: " android:textColor="@android:color/white" android:textSize="40px"/>
+
+        <ToggleButton
+            android:id="@+id/servo1"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:lineSpacingExtra="8sp"
+            android:text="ToggleButton"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textOff="IZQUIERDA"
+            android:textOn="APAGAR"
+            android:typeface="normal" />
+        <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint=" " android:background="@android:color/holo_blue_dark"/>
+        dit
+
+        <ToggleButton
+            android:id="@+id/servo2"
+            android:layout_width="108dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="casual"
+            android:lineSpacingExtra="8sp"
+            android:text="ToggleButton"
+            android:textAppearance="@style/TextAppearance.AppCompat.Button"
+            android:textOff="DERECHA"
+            android:textOn="APAGAR"
+            android:typeface="normal" />
+    </LinearLayout>
+    <EditText android:layout_width="wrap_content" android:layout_height="wrap_content" android:hint="" android:background="@android:color/white"/>
+    dit
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text=" "/>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="match_parent" android:text=" "/>
+
+        <Button
+            android:id="@+id/btn_Regresar"
+            android:layout_width="wrap_content"
+            android:layout_height="30dp"
+
+            android:background="@android:color/holo_red_light"
+            android:text="REGRESAR"
+            android:textColor="@android:color/black" />
+    </LinearLayout>
+</LinearLayout>
