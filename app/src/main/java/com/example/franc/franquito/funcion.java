@@ -35,6 +35,7 @@ public class funcion extends AppCompatActivity {
         led1 = findViewById(R.id.LED1);
         led2 = findViewById(R.id.LED2);
 
+
         btn_Regresar1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
