@@ -76,7 +76,7 @@ int var=0;
                 int v=validad();
                 String fec= fecha.getText().toString();
                 if(v==0){
-                    new registrar().execute("http://192.168.1.2/java/insert_cuenta.php?nom="+nom.getText()+"&ape="+ape.getText()+"&mail="+mail.getText()+"&tel="+tel.getText()+"&gen="+radio+"&fec="+fec);
+                    new registrar().execute("http://"+ durl.getIp()+"/java/insert_cuenta.php?nom="+nom.getText()+"&ape="+ape.getText()+"&mail="+mail.getText()+"&tel="+tel.getText()+"&gen="+radio+"&fec="+fec);
 
                     Toast.makeText(getApplicationContext(), "cuenta registrada", Toast.LENGTH_LONG).show();
 

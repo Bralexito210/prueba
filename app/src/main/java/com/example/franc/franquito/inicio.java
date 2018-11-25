@@ -60,7 +60,7 @@ public class inicio extends AppCompatActivity {
 
                 try {
                     //http://localhost/java/iinicio.php?n=david&p=david
-                    String a = durl.downloadUrl("http://"+ip+"/java/iinicio.php?n="+user.getText().toString()+"&p="+pass.getText().toString());
+                    String a = durl.downloadUrl("http://"+ durl.getIp()+"/java/iinicio.php?n="+user.getText().toString()+"&p="+pass.getText().toString());
                     durl.json(a,cont);
                     if(Integer.parseInt(cont[0])==1){
 
@@ -144,7 +144,7 @@ public class inicio extends AppCompatActivity {
         }
     }
     private void conectar(){
-        new existe().execute("http://"+ip+"/java/consulta_t.php?nom="+user.getText().toString()+"&tab="+tab);
+        new existe().execute("http://"+ durl.getIp()+"/java/consulta_t.php?nom="+user.getText().toString()+"&tab="+tab);
         Toast.makeText(getApplicationContext(), "existe "+existe_v, Toast.LENGTH_LONG).show();
     }
 
