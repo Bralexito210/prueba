@@ -42,6 +42,7 @@ public class funcion extends AppCompatActivity {
             public void onClick(View view) {
                 Intent intentReg = new Intent(funcion.this, menu.class);
                 funcion.this.startActivity(intentReg);
+
             }
         });
 
