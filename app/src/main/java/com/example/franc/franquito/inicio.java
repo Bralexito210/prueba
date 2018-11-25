@@ -56,7 +56,12 @@ public class inicio extends AppCompatActivity {
             public void onClick(View view) {
                 tab= "usuario";
                 String[] cont= new String[1];
-                if(user.getText().equals("") || pass.getText().equals("")){
+                if(user.getText().toString().equals("") || pass.getText().toString().equals("")){
+                    Toast.makeText(getApplicationContext(), "el usuario", Toast.LENGTH_LONG).show();
+                }
+                else {
+
+
 
                 try {
                     //http://localhost/java/iinicio.php?n=david&p=david
@@ -77,9 +82,9 @@ public class inicio extends AppCompatActivity {
                     e.printStackTrace();
                 }
                 }
-                else{
-                    Toast.makeText(getApplicationContext(), "por favor completar los campos", Toast.LENGTH_LONG).show();
-                }
+
+
+
                 //conectar();
             }
         });
