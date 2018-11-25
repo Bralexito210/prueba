@@ -51,11 +51,11 @@ public class funcion extends AppCompatActivity {
                 String campo="led_1";
                 //apagar
                 if(led1.getText().equals("ENCENDER")){
-                    new CargarDatos().execute("http://192.168.1.2/java/update_led1.php?campo="+campo+"&cambio=LOW");
+                    new CargarDatos().execute("http://"+ durl.getIp()+"/java/update_led1.php?campo="+campo+"&cambio=LOW");
                 }
                 //encerder
                 else if(led1.getText().equals("APAGAR")) {
-                    new CargarDatos().execute("http://192.168.1.2/java/update_led1.php?campo="+campo+"&cambio=HIGH");
+                    new CargarDatos().execute("http://"+ durl.getIp()+"/java/update_led1.php?campo="+campo+"&cambio=HIGH");
                 }
             }
         });
@@ -66,7 +66,7 @@ public class funcion extends AppCompatActivity {
                 String campo="led_2";
                 //apagar
                 if(led1.getText().equals("ENCENDER")){
-                    new CargarDatos().execute("http://192.168.1.2/java/update_led1.php?campo="+campo+"&cambio=LOW");
+                    new CargarDatos().execute("http://"+ durl.getIp()+"/java/update_led1.php?campo="+campo+"&cambio=LOW");
                 }
                 //encerder
                 else if(led1.getText().equals("APAGAR")) {
@@ -77,25 +77,25 @@ public class funcion extends AppCompatActivity {
         avanza.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new CargarDatos().execute("http://192.168.1.2/java/update_led1.php?campo=mover&cambio=ADELANTE");
+                new CargarDatos().execute("http://"+ durl.getIp()+"/java/update_led1.php?campo=mover&cambio=ADELANTE");
             }
         });
         retrocede.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new CargarDatos().execute("http://192.168.1.2/java/update_led1.php?campo=mover&cambio=ATRAS");
+                new CargarDatos().execute("http://"+ durl.getIp()+"/java/update_led1.php?campo=mover&cambio=ATRAS");
             }
         });
         izquierda.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new CargarDatos().execute("http://192.168.1.2/java/update_led1.php?campo=mover&cambio=IZQUIERDA");
+                new CargarDatos().execute("http://"+ durl.getIp()+"/java/update_led1.php?campo=mover&cambio=IZQUIERDA");
             }
         });
         derecha.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                new CargarDatos().execute("http://192.168.1.2/java/update_led1.php?campo=mover&cambio=DERECHA");
+                new CargarDatos().execute("http://"+ durl.getIp()+"/java/update_led1.php?campo=mover&cambio=DERECHA");
             }
         });
 

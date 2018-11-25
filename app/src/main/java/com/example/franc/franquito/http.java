@@ -15,6 +15,8 @@ import java.net.URL;
 
 public class http {
 
+    private String ip = "";
+
     public String downloadUrl(String myurl) throws IOException{
         Log.i("URL",""+myurl);
         myurl = myurl.replace(" ","20");
@@ -68,5 +70,7 @@ public class http {
 
     }
 
-
+    public String getIp() {
+        return ip;
+    }
 }
