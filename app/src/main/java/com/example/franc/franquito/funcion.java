@@ -3,6 +3,7 @@ package com.example.franc.franquito;
 import android.content.Intent;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.os.StrictMode;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
 import android.support.v7.app.AppCompatActivity;
@@ -18,7 +19,7 @@ import java.io.IOException;
 public class funcion extends AppCompatActivity {
     Button btn_Regresar1;
     ToggleButton led1,led2;
-    Button avanza,retrocede,izquierda,derecha;
+    Button avanza,retrocede,izquierda,derecha,parar;
     boolean est1;
     String dato="";
     http durl =new http();
@@ -27,12 +28,16 @@ public class funcion extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.funcion);
+
+        StrictMode.ThreadPolicy policy = new StrictMode.ThreadPolicy.Builder().permitAll().build();
+        StrictMode.setThreadPolicy(policy);
+
         btn_Regresar1= findViewById(R.id.btn_Regresar);
         avanza = findViewById(R.id.id_avanza);
         retrocede = findViewById(R.id.id_retrocede);
         izquierda = findViewById(R.id.id_izq);
         derecha = findViewById(R.id.id_der);
-
+        parar = findViewById(R.id.id_stop);
         led1 = findViewById(R.id.LED1);
         led2 = findViewById(R.id.LED2);
 
@@ -98,6 +103,13 @@ public class funcion extends AppCompatActivity {
                 new CargarDatos().execute("http://"+ durl.getIp()+"/java/update_led1.php?campo=mover&cambio=DERECHA");
             }
         });
+        parar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                new CargarDatos().execute("http://"+ durl.getIp()+"/java/update_led1.php?campo=mover&cambio=PARAR");
+            }
+        });
+
 
     }
 
